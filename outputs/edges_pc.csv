@@ -1,0 +1,14 @@
+source,target
+bmi,ap_hi
+bmi,weight
+gluc,bmi
+gluc,cholesterol
+height,weight
+height,bmi
+cholesterol,bmi
+cholesterol,gluc
+smoke,alco
+ap_lo,bmi
+ap_lo,ap_hi
+cardio,age
+age,cardio

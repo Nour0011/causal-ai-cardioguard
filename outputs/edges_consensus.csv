@@ -1,0 +1,9 @@
+source,target
+bmi,weight
+gluc,cholesterol
+height,weight
+height,bmi
+cholesterol,bmi
+ap_lo,bmi
+ap_lo,ap_hi
+cardio,age

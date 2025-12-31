@@ -1,0 +1,31 @@
+================================================================================
+BAYESIAN NETWORK REPORT
+================================================================================
+
+MODEL STRUCTURE
+--------------------------------------------------------------------------------
+Nodes:  13
+Edges:  31
+
+NODES
+--------------------------------------------------------------------------------
+  • age             (continuous, 3 bins)
+  • gender          (binary)
+  • height          (continuous, 3 bins)
+  • weight          (continuous, 3 bins)
+  • ap_hi           (continuous, 3 bins)
+  • ap_lo           (continuous, 3 bins)
+  • cholesterol     (ordinal, 3 levels)
+  • gluc            (ordinal, 3 levels)
+  • smoke           (binary)
+  • alco            (binary)
+  • active          (binary)
+  • bmi             (continuous, 3 bins)
+  • cardio          (binary)
+
+PREDICTIVE PERFORMANCE
+--------------------------------------------------------------------------------
+Accuracy: 0.745
+AUC:      0.807
+
+================================================================================

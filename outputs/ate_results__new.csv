@@ -1,0 +1,9 @@
+treatment,description,type,ate,magnitude,direction,clinical_relevance,backdoor_set
+cholesterol,High cholesterol (normal→high),ordinal,0.14612387451860614,moderate,increases,cholesterol (normal→high) increases CVD risk by ~14.6 pp.,"age, gluc, bmi"
+active,Physical activity (0→1),binary,-0.04610391395846458,small,decreases,active (0→1) decreases CVD risk by ~4.6 pp.,gender
+gluc,High glucose (normal→high),ordinal,0.043970698339100556,small,increases,gluc (normal→high) increases CVD risk by ~4.4 pp.,"age, bmi"
+alco,Alcohol consumption (0→1),binary,-0.03681786708418433,small,decreases,alco (0→1) decreases CVD risk by ~3.7 pp.,age
+smoke,Smoking (0→1),binary,-0.02430254044970359,small,decreases,smoke (0→1) decreases CVD risk by ~2.4 pp.,age
+bmi,BMI (+1 unit),continuous,0.016191290730629776,small,increases,bmi (+1) increases CVD risk by ~1.6 pp.,"age, active"
+ap_hi,Systolic BP (+1 mmHg),continuous,0.010150693193842097,small,increases,ap_hi (+1) increases CVD risk by ~1.0 pp.,"age, smoke, bmi, ap_lo"
+ap_lo,Diastolic BP (+1 mmHg),continuous,0.0026630960237633006,small,increases,ap_lo (+1) increases CVD risk by ~0.3 pp.,"age, smoke, ap_hi, bmi"

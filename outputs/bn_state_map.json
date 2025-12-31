@@ -1,0 +1,142 @@
+{
+  "age": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<50.3)",
+      "1": "Mid (50.3-57.3)",
+      "2": "High (≥57.3)"
+    },
+    "bin_edges": [
+      39.6,
+      50.3,
+      57.3,
+      64.3
+    ]
+  },
+  "gender": {
+    "type": "binary",
+    "states": {
+      "0": "Female",
+      "1": "Male"
+    },
+    "bin_edges": []
+  },
+  "height": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<160.0)",
+      "1": "Mid (160.0-168.0)",
+      "2": "High (≥168.0)"
+    },
+    "bin_edges": [
+      147.0,
+      160.0,
+      168.0,
+      184.0
+    ]
+  },
+  "weight": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<67.0)",
+      "1": "Mid (67.0-78.0)",
+      "2": "High (≥78.0)"
+    },
+    "bin_edges": [
+      48.0,
+      67.0,
+      78.0,
+      116.0
+    ]
+  },
+  "ap_hi": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<120.0)",
+      "1": "Mid (120.0-130.0)",
+      "2": "High (≥130.0)"
+    },
+    "bin_edges": [
+      90.0,
+      120.0,
+      130.0,
+      180.0
+    ]
+  },
+  "ap_lo": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<80.0)",
+      "1": "High (≥80.0)"
+    },
+    "bin_edges": [
+      60.0,
+      80.0,
+      100.0
+    ]
+  },
+  "cholesterol": {
+    "type": "ordinal",
+    "states": {
+      "0": "Normal",
+      "1": "Above Normal",
+      "2": "Well Above Normal"
+    },
+    "bin_edges": []
+  },
+  "gluc": {
+    "type": "ordinal",
+    "states": {
+      "0": "Normal",
+      "1": "Above Normal",
+      "2": "Well Above Normal"
+    },
+    "bin_edges": []
+  },
+  "smoke": {
+    "type": "binary",
+    "states": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "bin_edges": []
+  },
+  "alco": {
+    "type": "binary",
+    "states": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "bin_edges": []
+  },
+  "active": {
+    "type": "binary",
+    "states": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "bin_edges": []
+  },
+  "bmi": {
+    "type": "continuous",
+    "states": {
+      "0": "Low (<24.6)",
+      "1": "Mid (24.6-28.7)",
+      "2": "High (≥28.7)"
+    },
+    "bin_edges": [
+      18.611495844875343,
+      24.577867151840145,
+      28.650137741046837,
+      43.857725538353584
+    ]
+  },
+  "cardio": {
+    "type": "binary",
+    "states": {
+      "0": "No CVD",
+      "1": "Has CVD"
+    },
+    "bin_edges": []
+  }
+}

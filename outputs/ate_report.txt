@@ -1,0 +1,71 @@
+================================================================================
+AVERAGE TREATMENT EFFECT (ATE) REPORT
+================================================================================
+
+NOTE
+--------------------------------------------------------------------------------
+ATE is estimated from observational data, so confounding can flip signs.
+For clinical UI, apply guardrails (e.g., smoking/alcohol cannot be 'protective').
+
+RESULTS (SUCCESSFUL ESTIMATES)
+--------------------------------------------------------------------------------
+
+1. SMOKE (binary)
+   Description:  Smoking (0→1)
+   ATE:          -0.024303
+   Effect:       small decreases
+   Clinical:     smoke (0→1) decreases CVD risk by ~2.4 pp.
+   Adjusted for: age
+
+2. ALCO (binary)
+   Description:  Alcohol consumption (0→1)
+   ATE:          -0.036818
+   Effect:       small decreases
+   Clinical:     alco (0→1) decreases CVD risk by ~3.7 pp.
+   Adjusted for: age
+
+3. ACTIVE (binary)
+   Description:  Physical activity (0→1)
+   ATE:          -0.046104
+   Effect:       small decreases
+   Clinical:     active (0→1) decreases CVD risk by ~4.6 pp.
+   Adjusted for: gender
+
+4. BMI (continuous)
+   Description:  BMI (+1 unit)
+   ATE:          +0.016191
+   Effect:       small increases
+   Clinical:     bmi (+1) increases CVD risk by ~1.6 pp.
+   Adjusted for: age, active
+
+5. AP_HI (continuous)
+   Description:  Systolic BP (+1 mmHg)
+   ATE:          +0.010151
+   Effect:       small increases
+   Clinical:     ap_hi (+1) increases CVD risk by ~1.0 pp.
+   Adjusted for: age, smoke, bmi, ap_lo
+
+6. AP_LO (continuous)
+   Description:  Diastolic BP (+1 mmHg)
+   ATE:          +0.002663
+   Effect:       small increases
+   Clinical:     ap_lo (+1) increases CVD risk by ~0.3 pp.
+   Adjusted for: age, smoke, ap_hi, bmi
+
+7. CHOLESTEROL (ordinal)
+   Description:  High cholesterol (normal→high)
+   ATE:          +0.146124
+   Effect:       moderate increases
+   Clinical:     cholesterol (normal→high) increases CVD risk by ~14.6 pp.
+   Adjusted for: age, gluc, bmi
+
+8. GLUC (ordinal)
+   Description:  High glucose (normal→high)
+   ATE:          +0.043971
+   Effect:       small increases
+   Clinical:     gluc (normal→high) increases CVD risk by ~4.4 pp.
+   Adjusted for: age, bmi
+
+FAILED ESTIMATIONS (DEBUG)
+--------------------------------------------------------------------------------
+No failures recorded.

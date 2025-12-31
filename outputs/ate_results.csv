@@ -1,0 +1,9 @@
+treatment,description,type,ate,magnitude,direction,clinical_relevance,backdoor_set
+cholesterol,Cholesterol control (high→normal),ordinal,0.146123875,moderate,increases,High→Normal change in cholesterol increases CVD risk by 14.6 percentage points (population-level).,"age, gluc, bmi"
+active,Physical activity increase,binary,-0.046103914,small,decreases,active decreases CVD risk by 4.6 percentage points (population-level).,gender
+gluc,Glucose control (high→normal),ordinal,0.043970698,small,increases,High→Normal change in gluc increases CVD risk by 4.4 percentage points (population-level).,"age, bmi"
+alco,Alcohol reduction,binary,-0.036817867,small,decreases,alco decreases CVD risk by 3.7 percentage points (population-level).,age
+smoke,Smoking cessation,binary,-0.02430254,small,decreases,smoke decreases CVD risk by 2.4 percentage points (population-level).,age
+bmi,BMI reduction (per unit),continuous,0.016191291,small,increases,One-unit change in bmi increases CVD risk by 1.6 percentage points (population-level).,"age, active"
+ap_lo,Diastolic BP reduction (per mmHg),continuous,0.014530855,small,increases,One-unit change in ap_lo increases CVD risk by 1.5 percentage points (population-level).,"age, active, smoke, bmi"
+ap_hi,Systolic BP reduction (per mmHg),continuous,0.009820525,small,increases,One-unit change in ap_hi increases CVD risk by 1.0 percentage points (population-level).,"ap_lo, age, smoke, bmi"

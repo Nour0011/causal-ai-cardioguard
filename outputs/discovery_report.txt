@@ -1,0 +1,97 @@
+================================================================================
+CAUSAL DISCOVERY REPORT
+================================================================================
+
+METHODOLOGY
+--------------------------------------------------------------------------------
+This analysis combines multiple causal discovery approaches:
+
+1. MEDICAL KNOWLEDGE DAG
+   - Hand-crafted based on established medical literature
+   - Represents decades of cardiovascular research
+   - Forms the foundation of our causal model
+
+2. PC ALGORITHM (Constraint-based)
+   - Tests conditional independence relationships
+   - Based on statistical tests (chi-square, G-test)
+   - Good at finding causal structure from observational data
+
+3. GES ALGORITHM (Score-based)
+   - Searches for highest-scoring DAG using BIC
+   - Greedy search with forward and backward phases
+   - Balances model fit vs. complexity
+
+4. NOTEARS ALGORITHM (Continuous optimization)
+   - Formulates structure learning as continuous optimization
+   - Uses smooth DAG constraint
+   - Can handle larger graphs efficiently
+
+5. CONSENSUS VOTING
+   - Combines results from all data-driven methods
+   - Keeps edges appearing in 2+ algorithms
+   - More robust than any single method
+
+6. HYBRID DAG
+   - Merges medical knowledge with consensus
+   - Ensures biological plausibility
+   - Maintains DAG property (no cycles)
+
+================================================================================
+EDGE DISCOVERY RESULTS
+================================================================================
+
+Medical DAG edges:          30
+PC algorithm edges:         13
+GES algorithm edges:        25
+NOTEARS algorithm edges:     3
+Consensus edges (2+):        8
+Final hybrid DAG edges:     32
+
+================================================================================
+ALGORITHM COMPARISON
+================================================================================
+
+DIRECT CAUSES OF CARDIOVASCULAR DISEASE
+--------------------------------------------------------------------------------
+Medical knowledge: age, ap_hi, ap_lo, bmi, cholesterol, gluc, smoke
+PC algorithm:      age
+GES algorithm:     active, ap_hi
+NOTEARS algorithm: (none)
+Consensus:         (none)
+Final hybrid:      age, ap_hi, ap_lo, bmi, cholesterol, gluc, smoke
+
+INTER-ALGORITHM AGREEMENT
+--------------------------------------------------------------------------------
+Edges found by all 3 algorithms:  2
+Edges found by exactly 2:         6
+Edges found by only 1:            23
+Total unique edges discovered:    31
+
+================================================================================
+FINAL DAG VALIDATION
+================================================================================
+
+Is valid DAG (acyclic):   True
+Number of nodes:          13
+Number of edges:          32
+Average degree:           4.92
+Outcome in graph:         True
+Max path to outcome:      3
+
+================================================================================
+INTERPRETATION
+================================================================================
+
+The hybrid DAG represents our best understanding of causal relationships
+affecting cardiovascular disease, combining:
+- Established medical knowledge (gold standard)
+- Data-driven discoveries (multiple algorithms)
+- Consensus validation (robustness check)
+
+This structure will be used for:
+1. Average Treatment Effect (ATE) estimation
+2. Bayesian Network construction
+3. Personalized risk prediction
+4. Intervention recommendation
+
+================================================================================
